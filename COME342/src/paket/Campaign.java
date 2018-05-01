@@ -93,7 +93,7 @@ void setCampaignWorkers()
       void setConceptNote()
       {
     	  Scanner input18=new Scanner(System.in);
-    	  System.out.print("how many concept note you wanna add ? == ");
+    	  System.out.print("how many concept notes you want to add ? == ");
 			int many = Integer.parseInt(input18.nextLine());
       	
 		  for(int i=0;i<many;i++)
