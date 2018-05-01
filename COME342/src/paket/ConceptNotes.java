@@ -2,7 +2,7 @@ package paket;
 import java.util.*;
 public class ConceptNotes {
     private String ConceptNote;
-    Scanner notinput=new Scanner(System.in);
+    
     
      ConceptNotes()
      {

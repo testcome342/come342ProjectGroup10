@@ -22,7 +22,7 @@ public class BackStage {
 		if (clientSayaci > 0) {
 			for (int x = 0; x < manyClient; x++) {
 
-				//System.out.println("please enter the CompanyName,companyAddress,contactName,contactEmail");
+				
                 System.out.print("CompanyName= ");
 				CompanyName = input.nextLine();
 
@@ -55,7 +55,7 @@ public class BackStage {
 		} else if (clientSayaci == 0) {
 			for (int b = 0; b <= manyClient; b++) {
 
-				//System.out.println("please enter the CompanyName,companyAddress,contactName,contactEmail");
+				
                 System.out.print("CompanyName= ");
 				CompanyName = input.nextLine();
 				if (clientSayaci > 0) {
