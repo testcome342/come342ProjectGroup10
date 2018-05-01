@@ -21,10 +21,10 @@ public class Campaign {
 	
 	
 	
-	ArrayList<ConceptNotes> konseptNotlari=new ArrayList<>();
+	ArrayList<ConceptNotes> konseptNotlarý=new ArrayList<>();
 
 	int kampanyaCalisanSayisi=0;
-	int konseptNotlariSayýsi=0;
+	int konseptNotlarýSayýsý=0;
 	
 	Scanner giris=new Scanner(System.in);
 	Campaign()
@@ -52,6 +52,7 @@ public class Campaign {
 		System.out.println("  estimatedCost= "+estimatedCost);
 	}
    
+ 				////////////////
 void setCampaignWorkers()
     {
 	
@@ -85,7 +86,7 @@ void setCampaignWorkers()
     	
     }
     
-      
+      			////////////////
             
      
       void setConceptNote()
