@@ -179,7 +179,7 @@ public class BackStage {
 		{
 			for(int k=0; k<clientSayaci;k++)
 			{
-				for(int p=0;p<Client.get(k).kampanyaSayisi;p++)  //p<Client.get(k).kampanyalar�.size()
+				for(int p=0;p<Client.get(k).kampanyaSayisi;p++)  //p<Client.get(k).kampanyalarý.size()
 				{
 					System.out.print((p+1)+". ");
 					Client.get(k).kampanyalari.get(p).ListoftitleNames();
@@ -209,7 +209,7 @@ public class BackStage {
 		{
 			for(int k=0; k<clientSayaci;k++)
 			{
-				for(int p=0;p<Client.get(k).kampanyaSayisi;p++)  //p<Client.get(k).kampanyalar�.size()
+				for(int p=0;p<Client.get(k).kampanyaSayisi;p++)  //p<Client.get(k).kampanyalarý.size()
 				{
 					System.out.print((p+1)+". ");
 					Client.get(k).kampanyalari.get(p).ListoftitleNames();
@@ -230,12 +230,53 @@ public class BackStage {
 	}
 
 	void AddConceptNotes() {
+		if(clientSayaci==0)
+		{
+			System.out.println("there is no client in the system");
+		}
+		else
+		{
+			for(int k=0; k<clientSayaci;k++)
+			{
+				for(int p=0;p<Client.get(k).kampanyaSayisi;p++)  //p<Client.get(k).kampanyaları.size()
+				{
+					System.out.print((p+1)+". ");
+					Client.get(k).kampanyalari.get(p).ListoftitleNames();
+				}
+			}
+			System.out.print("please type the campaign title to add concept notes=");
+			String coName8 = input.nextLine();
+			for (int i = 0; i < clientSayaci; i++) {
+				for (int j = 0; j < Client.get(i).kampanyalari.size(); j++) {
+					if (coName8.equalsIgnoreCase(Client.get(i).kampanyalari.get(j).getCampaignTitle())) {
+
+						Client.get(i).kampanyalari.get(j).setConceptNote();
+					}
+				}
+			}
+		}
+	
 	
 	}
 
 	void getAllConceptNotes() {
-	
+		for(int k=0; k<clientSayaci;k++)
+		{
+			for(int p=0;p<Client.get(k).kampanyaSayisi;p++)  //p<Client.get(k).kampanyaları.size()
+			{
+				System.out.print((p+1)+". ");
+				Client.get(k).kampanyalari.get(p).ListoftitleNames();
+			}
+		}
+		System.out.print("please type the campaign title to get concept notes for this campaign=");
+		String coName10 = input.nextLine();
+		for (int i = 0; i < clientSayaci; i++) {
+			for (int j = 0; j < Client.get(i).kampanyalari.size(); j++) {
+				if (coName10.equalsIgnoreCase(Client.get(i).kampanyalari.get(j).getCampaignTitle())) {
+					Client.get(i).kampanyalari.get(j).getConceptNote();
+				}
+			}
+		}
 
 	}
-
 }
