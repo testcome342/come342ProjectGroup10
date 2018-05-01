@@ -12,19 +12,19 @@ public class Campaign {
 	CreativeStaff creativeStaffs[]= new CreativeStaff[24];
 	
 	
-	int adminstaffSayisi=0;
+//	int adminstaffSayisi=0;
 	int creativestaffSayisi=0;
-	int accountmanagerSayisi=0;
+	//int accountmanagerSayisi=0;
 	
 
 	
 	
 	
 	
-	ArrayList<ConceptNotes> konseptNotlarý=new ArrayList<>();
+	ArrayList<ConceptNotes> konseptNotlari=new ArrayList<>();
 
 	int kampanyaCalisanSayisi=0;
-	int konseptNotlarýSayýsý=0;
+	int konseptNotlariSayisi=0;
 	
 	Scanner giris=new Scanner(System.in);
 	Campaign()
@@ -61,7 +61,7 @@ void setCampaignWorkers()
 	System.out.println("please enter the (staffName) for creative staff that is going to be assign to this campaign");
 	for(int x=0;x<manyCreative;x++)
 	{
-		  //System.out.println("please enter the information for creative staff that is going to be assign to this campaign(staffName)");
+		  
 		  System.out.print("name= ");
 		  String staffName=giris.nextLine();
 	
