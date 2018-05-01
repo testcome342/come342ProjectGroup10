@@ -55,10 +55,34 @@ public class Campaign {
 void setCampaignWorkers()
     {
 	
+	System.out.print("how many creative staff you wanna assign to this campaign=");
+	int manyCreative=Integer.parseInt(giris.nextLine());
+	System.out.println("please enter the (staffName) for creative staff that is going to be assign to this campaign");
+	for(int x=0;x<manyCreative;x++)
+	{
+		  //System.out.println("please enter the information for creative staff that is going to be assign to this campaign(staffName)");
+		  System.out.print("name= ");
+		  String staffName=giris.nextLine();
+	
+	  creativeStaffs[creativestaffSayasý]=new CreativeStaff();
+	  creativeStaffs[creativestaffSayasý].setStaffName(staffName);
+	  creativestaffSayasý++;
+	}
+	System.out.println("**********added*************");
+	
     }
     void getCampaignWorkers()
     {
-   
+    	
+    	System.out.println("creative staff");
+    	System.out.println("-------------------");
+    	
+    		for(int x=0;x<creativestaffSayasý;x++)
+    		{
+    			System.out.print((x+1)+". ");
+    			creativeStaffs[x].getStaffName();
+    		}
+    	
     }
     
       
