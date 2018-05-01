@@ -89,14 +89,38 @@ void setCampaignWorkers()
       			////////////////
             
      
+      
       void setConceptNote()
       {
-    
+    	  Scanner input18=new Scanner(System.in);
+    	  System.out.print("how many concept note you wanna add ? == ");
+			int many = Integer.parseInt(input18.nextLine());
+      	
+		  for(int i=0;i<many;i++)
+		  {
+			  ConceptNotes temp=new ConceptNotes();
+			  String note;
+ 
+			 System.out.print("Note =");
+			   note=input18.nextLine();
+			  
+		
+			   temp.setConceptNotes(note);
+			   konseptNotlari.add(temp);
+			  konseptNotlariSayisi++;
+			  
+		  }
       }
     
 	void getConceptNote()
       {
-		
+		System.out.println("concept notes");
+    	System.out.println("-------------------");
+    	  for(int i=0;i<konseptNotlariSayisi; i++)
+    	  {
+    		  System.out.print((i+1)+". ");
+    		  konseptNotlari.get(i).getConceptNotes();
+    	  }
       }
 	public String getCampaignTitle()
 	{
@@ -107,6 +131,6 @@ void setCampaignWorkers()
 		System.out.println(title+" ");
 	}
       
- 
+	
   
 }
