@@ -12,9 +12,9 @@ public class Campaign {
 	CreativeStaff creativeStaffs[]= new CreativeStaff[24];
 	
 	
-	int adminstaffSayasý=0;
-	int creativestaffSayasý=0;
-	int accountmanagerSayasý=0;
+	int adminstaffSayisi=0;
+	int creativestaffSayisi=0;
+	int accountmanagerSayisi=0;
 	
 
 	
@@ -65,9 +65,9 @@ void setCampaignWorkers()
 		  System.out.print("name= ");
 		  String staffName=giris.nextLine();
 	
-	  creativeStaffs[creativestaffSayasý]=new CreativeStaff();
-	  creativeStaffs[creativestaffSayasý].setStaffName(staffName);
-	  creativestaffSayasý++;
+	  creativeStaffs[creativestaffSayisi]=new CreativeStaff();
+	  creativeStaffs[creativestaffSayisi].setStaffName(staffName);
+	  creativestaffSayisi++;
 	}
 	System.out.println("**********added*************");
 	
@@ -78,7 +78,7 @@ void setCampaignWorkers()
     	System.out.println("creative staff");
     	System.out.println("-------------------");
     	
-    		for(int x=0;x<creativestaffSayasý;x++)
+    		for(int x=0;x<creativestaffSayisi;x++)
     		{
     			System.out.print((x+1)+". ");
     			creativeStaffs[x].getStaffName();

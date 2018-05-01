@@ -6,7 +6,7 @@ public class Client {
 	private String companyAddress;
 	private String contactName;
 	private String contactEmail;
-	ArrayList<Campaign> kampanyalarý=new ArrayList<>();
+	ArrayList<Campaign> kampanyalari=new ArrayList<>();
 
 public	int kampanyaSayisi=0;
 	Scanner input=new Scanner(System.in);
@@ -65,7 +65,7 @@ public	int kampanyaSayisi=0;
 				title=input.nextLine();
 				for (int k = 0; k < kampanyaSayisi; k++)
 				{
-					if (title.equalsIgnoreCase(kampanyalarý.get(k).getCampaignTitle()))
+					if (title.equalsIgnoreCase(kampanyalari.get(k).getCampaignTitle()))
 					{
 						eklendi=true;
 					}
@@ -81,7 +81,7 @@ public	int kampanyaSayisi=0;
 					 System.out.print("estimatedCost= ");
 					 estimatedCost=Integer.parseInt(input.nextLine());
 					 temp.createCampaign(title, campaignStartDate, campaignFinishDate, estimatedCost);
-					 kampanyalarý.add(temp);
+					 kampanyalari.add(temp);
 					 kampanyaSayisi++;
 					 System.out.println("**********added*************");   //System.out.println("title'ý kontrol edip ekledim");
 				}
@@ -102,7 +102,7 @@ public	int kampanyaSayisi=0;
 				if (kampanyaSayisi > 0)
 				{
 					for (int k = 0; k < kampanyaSayisi; k++) {
-						if (title.equalsIgnoreCase(kampanyalarý.get(k).getCampaignTitle())) {
+						if (title.equalsIgnoreCase(kampanyalari.get(k).getCampaignTitle())) {
 							eklendi2 = true;
 						}
 					}
@@ -117,7 +117,7 @@ public	int kampanyaSayisi=0;
 						 System.out.print("estimatedCost= ");
 						 estimatedCost=Integer.parseInt(input.nextLine());
 						 temp.createCampaign(title, campaignStartDate, campaignFinishDate, estimatedCost);
-						 kampanyalarý.add(temp);
+						 kampanyalari.add(temp);
 						 kampanyaSayisi++;
 						 System.out.println("**********added*************");   //System.out.println("title'ý kontrol edip ekledim");
 					}
@@ -140,7 +140,7 @@ public	int kampanyaSayisi=0;
 					
 					
 					temp.createCampaign(title, campaignStartDate, campaignFinishDate, estimatedCost);
-					kampanyalarý.add(temp);
+					kampanyalari.add(temp);
 					kampanyaSayisi++;
 					manyCampaign--;
 					System.out.println("**********added*************");                //System.out.println("direk ekledim");
@@ -163,7 +163,7 @@ public	int kampanyaSayisi=0;
 			for(int i=0;i<kampanyaSayisi;i++)
 			{
 				 System.out.print((i+1)+".");
-				kampanyalarý.get(i).getCampaignInfo();
+				kampanyalari.get(i).getCampaignInfo();
 				System.out.println("************************");
 			}
 		}

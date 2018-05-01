@@ -182,16 +182,16 @@ public class BackStage {
 				for(int p=0;p<Client.get(k).kampanyaSayisi;p++)  //p<Client.get(k).kampanyalarý.size()
 				{
 					System.out.print((p+1)+". ");
-					Client.get(k).kampanyalarý.get(p).ListoftitleNames();
+					Client.get(k).kampanyalari.get(p).ListoftitleNames();
 				}
 			}
 			System.out.print("please type the campaign title to assign staff to campaign=");
 			String coName5 = input.nextLine();
 
 			for (int i = 0; i < clientSayaci; i++) {
-				for (int j = 0; j < Client.get(i).kampanyalarý.size(); j++) {
-					if (coName5.equalsIgnoreCase(Client.get(i).kampanyalarý.get(j).getCampaignTitle())) {
-						Client.get(i).kampanyalarý.get(j).setCampaignWorkers();
+				for (int j = 0; j < Client.get(i).kampanyalari.size(); j++) {
+					if (coName5.equalsIgnoreCase(Client.get(i).kampanyalari.get(j).getCampaignTitle())) {
+						Client.get(i).kampanyalari.get(j).setCampaignWorkers();
 					}
 					
 				}
@@ -212,15 +212,15 @@ public class BackStage {
 				for(int p=0;p<Client.get(k).kampanyaSayisi;p++)  //p<Client.get(k).kampanyalarý.size()
 				{
 					System.out.print((p+1)+". ");
-					Client.get(k).kampanyalarý.get(p).ListoftitleNames();
+					Client.get(k).kampanyalari.get(p).ListoftitleNames();
 				}
 			}
 			System.out.print("please type the campaign title to get working staff for this campaing=");
 			String coName6 = input.nextLine();
 			for (int i = 0; i < clientSayaci; i++) {
-				for (int j = 0; j < Client.get(i).kampanyalarý.size(); j++) {
-					if (coName6.equalsIgnoreCase(Client.get(i).kampanyalarý.get(j).getCampaignTitle())) {
-						Client.get(i).kampanyalarý.get(j).getCampaignWorkers();
+				for (int j = 0; j < Client.get(i).kampanyalari.size(); j++) {
+					if (coName6.equalsIgnoreCase(Client.get(i).kampanyalari.get(j).getCampaignTitle())) {
+						Client.get(i).kampanyalari.get(j).getCampaignWorkers();
 					}
 				}
 			}
