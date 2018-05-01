@@ -14,7 +14,6 @@ public class Test {
 		{
 			System.out.println("\r\n" + "PLEASE WRITE WHAT YOU WANT TO DO");
 			System.out.println("(add client)(add campaign)(assign Staff to Campaign)(create Concept Notes)(browse concept notes)");
-
             System.out.print("->");
 			toDo = input.nextLine();
 			if (toDo.equalsIgnoreCase("add client"))
