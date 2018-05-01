@@ -21,10 +21,10 @@ public class Campaign {
 	
 	
 	
-	ArrayList<ConceptNotes> konseptNotlarý=new ArrayList<>();
+	ArrayList<ConceptNotes> konseptNotlari=new ArrayList<>();
 
 	int kampanyaCalisanSayisi=0;
-	int konseptNotlarýSayýsý=0;
+	int konseptNotlariSayýsi=0;
 	
 	Scanner giris=new Scanner(System.in);
 	Campaign()
