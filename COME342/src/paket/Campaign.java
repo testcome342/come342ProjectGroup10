@@ -88,7 +88,7 @@ void setCampaignWorkers()
     
       			////////////////
             
-     
+     //set and get methods added 
       
       void setConceptNote()
       {

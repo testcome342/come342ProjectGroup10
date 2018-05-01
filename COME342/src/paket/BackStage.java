@@ -228,7 +228,7 @@ public class BackStage {
 		}
 	
 	}
-
+// Adding new concept notes and listing the added notes functions added
 	void AddConceptNotes() {
 		if(clientSayaci==0)
 		{
