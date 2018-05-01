@@ -23,7 +23,7 @@ public class Test {
 			{
 				begin.getAllClients();
 			}
-        	if (toDo.equalsIgnoreCase("add campaign"))
+			if (toDo.equalsIgnoreCase("add campaign"))
 			{
 				begin.addNewCampaign();
 			}
