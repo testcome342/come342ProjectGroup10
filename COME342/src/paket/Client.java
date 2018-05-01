@@ -15,7 +15,7 @@ public	int kampanyaSayisi=0;
 	{
 		
 	}
-	Client(String companyName,String companyAddress,String contactName)
+	Client(String companyName,String companyAddress,String contactName,String contactEmail)
 	{
 		setClientInfo ( companyName, companyAddress, contactName,contactEmail);
 	}
@@ -83,7 +83,7 @@ public	int kampanyaSayisi=0;
 					 temp.createCampaign(title, campaignStartDate, campaignFinishDate, estimatedCost);
 					 kampanyalari.add(temp);
 					 kampanyaSayisi++;
-					 System.out.println("**********added*************");   //System.out.println("title'ý kontrol edip ekledim");
+					 System.out.println("**********added*************");   //System.out.println("title'Ã½ kontrol edip ekledim");
 				}
 				else if (eklendi = true)
 				{
@@ -119,7 +119,7 @@ public	int kampanyaSayisi=0;
 						 temp.createCampaign(title, campaignStartDate, campaignFinishDate, estimatedCost);
 						 kampanyalari.add(temp);
 						 kampanyaSayisi++;
-						 System.out.println("**********added*************");   //System.out.println("title'ý kontrol edip ekledim");
+						 System.out.println("**********added*************");   //System.out.println("title'Ã½ kontrol edip ekledim");
 					}
 					else if (eklendi2 = true) 
 					{
