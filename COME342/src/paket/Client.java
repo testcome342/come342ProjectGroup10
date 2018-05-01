@@ -123,7 +123,7 @@ public	int kampanyaSayisi=0;
 					}
 					else if (eklendi2 = true) 
 					{
-						System.out.println("this title has been add before");
+						System.out.println("this title has been added before");
 
 					}
 				}

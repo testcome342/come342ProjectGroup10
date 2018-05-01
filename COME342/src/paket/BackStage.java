@@ -110,6 +110,7 @@ public class BackStage {
 
 	void getAllClients() {
 		if (clientSayaci != 0) {
+			System.out.println("-------CLIENTS------");
 			for (int i = 0; i < clientSayaci; i++) {
                 System.out.print((i+1)+".");
 				Client.get(i).getClientInfo();
