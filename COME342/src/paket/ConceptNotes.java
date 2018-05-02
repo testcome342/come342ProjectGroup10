@@ -1,25 +1,35 @@
 package paket;
 import java.util.*;
 public class ConceptNotes {
-    private String ConceptNote;
+       public String ConceptNote;
+       public String NoteTitle;
+       public String whoCreate;
+       public String time;
     
     
      ConceptNotes()
      {
     	 
      }
-     ConceptNotes(String ConceptNotes)
+     ConceptNotes(String ConceptNotes,String NoteTitle,String whoCreate,String time)
      {
-    	 setConceptNotes(ConceptNotes);
+    	 setConceptNotes(ConceptNotes,NoteTitle,whoCreate,time);
      }
-     void setConceptNotes(String ConceptNotes)
+      void setConceptNotes(String ConceptNotes,String NoteTitle,String whoCreate,String time)
      {
     	 this.ConceptNote=ConceptNotes;
+    	 this.NoteTitle=NoteTitle;
+    	 this.whoCreate=whoCreate;
+    	 this.time=time;
      }
-     void getConceptNotes()
+       void getConceptNotes()
      {
     	
-    	System.out.println(ConceptNote);
+    	System.out.println("ConceptNote= "+ConceptNote);
+    	System.out.println("  NoteTitle= "+NoteTitle);
+    	System.out.println("  whoCreate= "+whoCreate);
+    	System.out.println("  time= "+time);
+    	System.out.println("--------------------------");
      }
     
      
