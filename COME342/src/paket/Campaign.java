@@ -99,13 +99,20 @@ void setCampaignWorkers()
 		  for(int i=0;i<many;i++)
 		  {
 			  ConceptNotes temp=new ConceptNotes();
-			  String note;
- 
-			 System.out.print("Note =");
+			   String note,notetitle,whocreate,time;
+			   System.out.print("Note =");
 			   note=input18.nextLine();
-			  
+			   
+			   System.out.print("note title =");
+			   notetitle=input18.nextLine();
+			   System.out.print("creator =");
+			   whocreate=input18.nextLine();
+			   System.out.print("time =");
+			   time=input18.nextLine();
+			   
+
+			  System.out.println("*****created******");
 		
-			   temp.setConceptNotes(note);
 			   konseptNotlari.add(temp);
 			  konseptNotlariSayisi++;
 			  
